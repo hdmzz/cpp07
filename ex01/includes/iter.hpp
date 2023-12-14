@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: hdamitzi <hdamitzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 06:11:16 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/12/09 06:15:24 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/12/14 15:01:02 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 #include <iostream>
 
-template<typename A, typename F>
-void iter(A * array, size_t len, F function) {
+template<typename T>
+void iter(T * array, size_t len, void (*f)(T const &)) {
     for (size_t i = 0; i < len; i++) {
-        function(array[i]);
+        f(array[i]);
     }
 }
 

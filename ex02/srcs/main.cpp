@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: hdamitzi <hdamitzi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 10:26:18 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/12/09 10:33:09 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/12/14 15:13:34 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,7 @@ int main(int, char**)
                 std::cerr << "didn't save the same value!!" << std::endl;
                 return 1;
             }
-            // std::cout << "tmp[" << i << "]:\t" << tmp[i] << std::endl; //uncomment these two lines to see the arrays have the same values
-            // std::cout << "test[" << i << "]:\t" << test[i] << std::endl;
+
         }
         }
         catch(const std::exception& e)
@@ -86,7 +85,6 @@ int main(int, char**)
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
-        // std::cout << "index was -2" << std::endl;
     }
     try
     {
@@ -95,17 +93,12 @@ int main(int, char**)
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
-        // std::cout << "tried to access past the last element of the array" << std::endl;
     }
 
     for (int i = 0; i < MAX_VAL; i++)
     {
         numbers[i] = rand();
     }
-    delete [] mirror;//
-    // for (int i = 0; i < MAX_VAL; i++)
-    // {
-    //     std::cout << numbers[i] << std::endl;
-    // }
+    delete [] mirror;
     return 0;
 }
