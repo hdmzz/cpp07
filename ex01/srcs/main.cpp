@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdamitzi <hdamitzi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 06:16:01 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/12/14 15:02:28 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/12/15 13:53:46 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,105 +46,105 @@ void	appendSuffixString(std::string & s)
 }
 
 
-// int	main(void)
-// {
-// 	{
-// 		std::cout << "---- EMPTY ARRAY TEST" << std::endl;
+ int	main(void)
+ {
+ 	{
+ 		std::cout << "---- EMPTY ARRAY TEST" << std::endl;
 		
-// 		int	intArray[] = {};
-// 		size_t	arraySize = 0;
+ 		int	intArray[] = {};
+ 		size_t	arraySize = 0;
 
-// 		std::cout << "Empty int array:\t\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Empty int array:\t\t";
+ 		::printArray<int>(intArray, arraySize);
 
-// 		::iter<int>(intArray, arraySize, ::addOne<int>);
+ 		::iter<int>(intArray, arraySize, ::addOne<int>);
 		
-// 		std::cout << "Empty int array add 1 iter:\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Empty int array add 1 iter:\t";
+ 		::printArray<int>(intArray, arraySize);
 		
-// 		::iter<int>(intArray, arraySize, ::multiplyIntByTwo);
+ 		::iter<int>(intArray, arraySize, ::multiplyIntByTwo);
 		
-// 		std::cout << "Empty int array double iter:\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Empty int array double iter:\t";
+ 		::printArray<int>(intArray, arraySize);
 
-// 	}
-// 	{
-// 		std::cout << std::endl << "---- INT ARRAY TEST" << std::endl;
+ 	}
+ 	{
+ 		std::cout << std::endl << "---- INT ARRAY TEST" << std::endl;
 		
-// 		int	intArray[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-// 		size_t	arraySize = 10;
+ 		int	intArray[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+ 		size_t	arraySize = 10;
 
-// 		std::cout << "Int array:\t\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Int array:\t\t";
+ 		::printArray<int>(intArray, arraySize);
 
-// 		::iter<int>(intArray, arraySize, ::addOne<int>);
+ 		::iter<int>(intArray, arraySize, ::addOne<int>);
 		
-// 		std::cout << "Int array add 1 iter:\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Int array add 1 iter:\t";
+ 		::printArray<int>(intArray, arraySize);
 		
-// 		::iter<int>(intArray, arraySize, ::multiplyIntByTwo);
+ 		::iter<int>(intArray, arraySize, ::multiplyIntByTwo);
 		
-// 		std::cout << "Int array double iter:\t";
-// 		::printArray<int>(intArray, arraySize);
+ 		std::cout << "Int array double iter:\t";
+ 		::printArray<int>(intArray, arraySize);
 
-// 	}
-// 	{
-// 		std::cout << std::endl << "---- DOUBLE ARRAY TEST" << std::endl;
+ 	}
+ 	{
+ 		std::cout << std::endl << "---- DOUBLE ARRAY TEST" << std::endl;
 		
-// 		double doubleArray[] = {0.2, 1.489, 20.5, 11.0};
-// 		size_t	arraySize = 4;
+ 		double doubleArray[] = {0.2, 1.489, 20.5, 11.0};
+ 		size_t	arraySize = 4;
 		
-// 		std::cout << "Double array:\t\t\t";
-// 		::printArray<double>(doubleArray, arraySize);
+ 		std::cout << "Double array:\t\t\t";
+ 		::printArray<double>(doubleArray, arraySize);
 		
-// 		::iter<double>(doubleArray, arraySize, ::addOne<double>);
+ 		::iter<double>(doubleArray, arraySize, ::addOne<double>);
 		
-// 		std::cout << "Double array add 1 iter:\t";
-// 		::printArray<double>(doubleArray, arraySize);
+ 		std::cout << "Double array add 1 iter:\t";
+ 		::printArray<double>(doubleArray, arraySize);
 		
-// 		::iter<double>(doubleArray, arraySize, ::roundDouble);
+ 		::iter<double>(doubleArray, arraySize, ::roundDouble);
 		
-// 		std::cout << "Double array round iter:\t";
-// 		::printArray<double>(doubleArray, arraySize);
-// 	}
-// 	{
-// 		std::cout << std::endl << "---- CHAR ARRAY TEST" << std::endl;
+ 		std::cout << "Double array round iter:\t";
+ 		::printArray<double>(doubleArray, arraySize);
+ 	}
+ 	{
+ 		std::cout << std::endl << "---- CHAR ARRAY TEST" << std::endl;
 		
-// 		char charArray[] = {'a', 'b', 'c', 'd', 'e'};
-// 		size_t	arraySize = 5;
+ 		char charArray[] = {'a', 'b', 'c', 'd', 'e'};
+ 		size_t	arraySize = 5;
 		
-// 		std::cout << "Char array:\t\t\t";
-// 		::printArray<char>(charArray, arraySize);
+ 		std::cout << "Char array:\t\t\t";
+ 		::printArray<char>(charArray, arraySize);
 		
-// 		::iter<char>(charArray, arraySize, ::addOne<char>);
+ 		::iter<char>(charArray, arraySize, ::addOne<char>);
 		
-// 		std::cout << "Char array add 1 iter:\t\t";
-// 		::printArray<char>(charArray, arraySize);
+ 		std::cout << "Char array add 1 iter:\t\t";
+ 		::printArray<char>(charArray, arraySize);
 		
-// 		::iter<char>(charArray, arraySize, ::capitalizeChar);
+ 		::iter<char>(charArray, arraySize, ::capitalizeChar);
 		
-// 		std::cout << "Char array to upper iter:\t";
-// 		::printArray<char>(charArray, arraySize);
-// 	}
-// 	{
-// 		std::cout << std::endl << "---- STRING ARRAY TEST" << std::endl;
+ 		std::cout << "Char array to upper iter:\t";
+ 		::printArray<char>(charArray, arraySize);
+ 	}
+ 	{
+ 		std::cout << std::endl << "---- STRING ARRAY TEST" << std::endl;
 		
-// 		std::string stringArray[] = {"Hello", "world", "!"};
-// 		size_t	arraySize = 3;
+ 		std::string stringArray[] = {"Hello", "world", "!"};
+ 		size_t	arraySize = 3;
 		
-// 		std::cout << "String array:\t\t\t";
-// 		::printArray<std::string>(stringArray, arraySize);
+ 		std::cout << "String array:\t\t\t";
+ 		::printArray<std::string>(stringArray, arraySize);
 		
-// 		::iter<std::string>(stringArray, arraySize, ::capitalizeString);
+ 		::iter<std::string>(stringArray, arraySize, ::capitalizeString);
 		
-// 		std::cout << "String array to upper iter:\t";
-// 		::printArray<std::string>(stringArray, arraySize);
+ 		std::cout << "String array to upper iter:\t";
+ 		::printArray<std::string>(stringArray, arraySize);
 
-// 		::iter<std::string>(stringArray, arraySize, ::appendSuffixString);
+ 		::iter<std::string>(stringArray, arraySize, ::appendSuffixString);
 	
-// 		std::cout << "String array append iter:\t";
-// 		::printArray<std::string>(stringArray, arraySize);
-// 	}
-// 	return (0);
-// }
+ 		std::cout << "String array append iter:\t";
+ 		::printArray<std::string>(stringArray, arraySize);
+ 	}
+ 	return (0);
+ }
 

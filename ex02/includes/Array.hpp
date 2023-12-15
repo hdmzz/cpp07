@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 06:24:13 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/12/09 10:38:53 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/12/15 13:54:59 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
     T * _array;
     unsigned int _size;
 public:
-    Array() : _array(NULL), _size(0) {}
+    Array() : _array(new T[0]), _size(0) {}
     Array(unsigned int n) : _array(new T[n]), _size(n) {}
     Array(Array const & src) : _array(new T[src._size]), _size(src._size) {
         for (unsigned int i = 0; i < src._size; i++) {
